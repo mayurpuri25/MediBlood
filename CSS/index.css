@@ -1,0 +1,104 @@
+/* navbar */
+.bg-img {
+    /* The image used */
+    background-image: url("../img/25_orig.jpg");
+    width: 100%;
+
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+
+  /* donar and donate */
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    /* background-color: DodgerBlue; */
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 33.33%;
+    border-radius: 2rem;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* blood types */
+  /* .head{
+   text-decoration: underline;  
+  } */
+  
+  .item1 { grid-area: header1; }
+  .item2 { grid-area: header2; }
+  .item3 { grid-area: header3; }
+  .item4 { grid-area: header4; }
+  .item5 { grid-area: header5; }
+  .item6 { grid-area: header6; }
+  .item7 { grid-area: header7; }
+  .item8 { grid-area: header8; }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header1 header2 header3 header4'
+      'header5 header6 header7 header8';
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+
+  }
+  
+  .grid-container > div {
+    border-radius: 2rem;
+    font-family: inherit;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-size: smaller;
+  }
+  .bld{
+    padding: 4px;
+    size: 2rem;
+  }
+
+  @media screen and (max-width: 780px) {
+     
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header1 header2'
+      'header3 header4'
+      'header5 header6'
+      'header7 header8';
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+
+  }
+  }
+  @media screen and (max-width: 600px) {
+     
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header1'' header2'
+      'header3 ''header4'
+      'header5 ''header6'
+      'header7'' header8';
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+
+  }
+  }
